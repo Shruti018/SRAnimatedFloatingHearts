@@ -8,6 +8,21 @@ A floating heart effect on your like button, similar as facebook older version
 
 ## Usage
 
+**Swift**
+
+Add an floatinghearts instance inside a view:
+
+1 Drag and drop a UIView instance in Interface Builder.
+
+![](screenshots/1.png)
+
+2 Change it's class to favouriteHearts.
+
+![](screenshots/2.png)
+
+3 Create a reference of the favouriteHearts.
+
+![](screenshots/3.png)
 
 
 ## Requirements
