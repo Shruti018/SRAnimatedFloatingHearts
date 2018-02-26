@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Palatino.ttc">
+            <string>Palatino-Roman</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SRAnimatedFloatingHearts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-GF-4Fq">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CTS-v9-HD5"/>
+                                    <constraint firstAttribute="height" constant="200" id="Z5C-hT-OTD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Friends-logo-wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-D2-T9N">
+                                <rect key="frame" x="47" y="93" width="280" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="IVo-jI-3DZ"/>
+                                    <constraint firstAttribute="height" constant="140" id="JoD-H5-bbU"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvz-kE-Imt">
+                                <rect key="frame" x="277.5" y="233.5" width="60" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Cxd-ea-8Yn"/>
+                                    <constraint firstAttribute="height" constant="40" id="qXh-ta-oKo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU0-aQ-TDk" customClass="favouriteHearts" customModule="SRAnimatedFloatingHearts" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Vf3-Hd-cFb"/>
+                                    <constraint firstAttribute="height" constant="250" id="v9V-se-uei"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-ED-pYE">
+                                <rect key="frame" x="62.5" y="453.5" width="250" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-gW-JgC">
+                                        <rect key="frame" x="213.5" y="-0.5" width="36.5" height="40"/>
+                                        <state key="normal" image="ic_white"/>
+                                        <connections>
+                                            <action selector="onClick_Favourite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkh-Iv-k1w"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love them?, hit -&gt; " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-CF-FBo">
+                                        <rect key="frame" x="0.0" y="-0.5" width="208" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DDM-gW-JgC" firstAttribute="leading" secondItem="Z76-CF-FBo" secondAttribute="trailing" constant="5.5" id="73F-hT-fLK"/>
+                                    <constraint firstAttribute="trailing" secondItem="DDM-gW-JgC" secondAttribute="trailing" id="ETe-wx-ECq"/>
+                                    <constraint firstItem="Z76-CF-FBo" firstAttribute="leading" secondItem="HPp-ED-pYE" secondAttribute="leading" id="K67-BG-7La"/>
+                                    <constraint firstItem="Z76-CF-FBo" firstAttribute="top" secondItem="HPp-ED-pYE" secondAttribute="top" id="KdB-Kv-CQp"/>
+                                    <constraint firstAttribute="height" constant="40" id="rzA-rQ-wNq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z76-CF-FBo" secondAttribute="bottom" id="uHb-Ec-zdB"/>
+                                    <constraint firstAttribute="bottom" secondItem="DDM-gW-JgC" secondAttribute="bottom" constant="0.5" id="yRb-yT-qoc"/>
+                                    <constraint firstItem="DDM-gW-JgC" firstAttribute="top" secondItem="HPp-ED-pYE" secondAttribute="top" id="zJj-NK-wKN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HPp-ED-pYE" firstAttribute="top" secondItem="ZVS-GF-4Fq" secondAttribute="bottom" constant="20" id="0yg-50-1Ga"/>
+                            <constraint firstItem="mvz-kE-Imt" firstAttribute="top" secondItem="ZVS-GF-4Fq" secondAttribute="top" id="5qn-BX-aE4"/>
+                            <constraint firstItem="HPp-ED-pYE" firstAttribute="trailing" secondItem="FU0-aQ-TDk" secondAttribute="trailing" id="Hfc-1j-HfV"/>
+                            <constraint firstItem="ZVS-GF-4Fq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kho-7u-37u"/>
+                            <constraint firstItem="ZVS-GF-4Fq" firstAttribute="top" secondItem="Oky-D2-T9N" secondAttribute="bottom" id="Q3h-hj-wsT"/>
+                            <constraint firstItem="FU0-aQ-TDk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QW1-O4-udN"/>
+                            <constraint firstItem="HPp-ED-pYE" firstAttribute="leading" secondItem="FU0-aQ-TDk" secondAttribute="leading" id="XhV-Gy-doj"/>
+                            <constraint firstItem="ZVS-GF-4Fq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YsV-TP-7g8"/>
+                            <constraint firstItem="FU0-aQ-TDk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zsl-Mb-OB5"/>
+                            <constraint firstItem="mvz-kE-Imt" firstAttribute="trailing" secondItem="ZVS-GF-4Fq" secondAttribute="trailing" id="lrZ-Wj-uvR"/>
+                            <constraint firstItem="Oky-D2-T9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgE-5L-5N9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnFave" destination="DDM-gW-JgC" id="ytz-x6-hpb"/>
+                        <outlet property="viewHearts" destination="FU0-aQ-TDk" id="jbN-6G-1rP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Friends-logo-wallpaper.jpg" width="2560" height="1440"/>
+        <image name="friends.jpg" width="2048" height="1152"/>
+        <image name="ic_white" width="16" height="16"/>
+    </resources>
+</document>
